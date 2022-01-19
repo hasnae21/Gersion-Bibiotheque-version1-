@@ -1,0 +1,212 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    border-bottom-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.section1{
+    background-color: #910705;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.saisi{
+    margin: 20px;
+    padding: auto;
+    
+}
+img{
+    width: 450px;
+    padding-right: 8px;
+}
+form{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding:  15px 25px;
+    float: right;
+}
+h2{
+    text-align: center;
+    padding:  15px 0px;
+    padding-bottom: 10px;
+    color: #757575;
+    font-size: 25px;
+}
+h1{
+    text-align: center;
+    padding:  5px 0px;
+    color: hsl(1, 93%, 29%);
+    font-size: 25px;
+}
+h3{
+    text-align: center;
+    padding-bottom: 10px;
+    color: #F1D600;
+    font-size: 25px;
+}
+.validation-error-hide{
+    display: none;
+}
+input {
+    width: 400px;
+    height: 35px;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    color:#757575;
+    padding-left:  15px;
+    padding-right:  15px;
+    background-color: #F1D600;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight:bold;
+    border: 2px solid #F1D600;
+    /* z-index: 999;   */
+}
+select{
+    width: 400px;
+    height: 35px;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    color:#757575;
+    padding-left:  15px;
+    padding-right:  15px;
+    background-color: #F1D600;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight:bold;
+    border: 2px solid #F1D600;
+}
+#date{
+    color:#757575;
+}
+label{
+    color: white;
+    margin: 0px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-left:10px ;
+}
+.Radiobtns{
+    padding: 4px 0px;
+    padding-left: 20px;
+    width: 230px;
+    height: 110px;
+    border-radius: 25px;
+    margin: 5px 8px  ;
+    background-color: #F1D600;
+}
+.flexbtn{
+    display: flex;
+    justify-content: space-between;
+}
+.Radiobtns label{
+    width: 15px;
+    height: 15px;
+    padding-left: 10px;
+    color: #757575;
+    font-size:medium;
+    font-weight:lighter;
+}
+.Radiobtns input{
+    width: 15px;
+    height: 15px;
+    margin: 9px 0px;
+    /* fill: transparent;    ma5adamaxi*/
+    /* border: 6px solid #757575;    ma5adamaxi */
+}
+.inputInsérer{
+    width:55px;
+    height: 55px;
+    background-color: transparent;
+    border: transparent;
+    padding: 0px;
+    margin: 0;
+    margin-top: 55px;
+    margin-right: 20px;
+}
+/* .labelInsérer{
+    margin: 0;
+    padding: 0;
+    margin-top: 13px;
+    font-size: 20px;
+    color: #F1D600;
+    font-weight:bold;
+} */
+.inputInsérer{
+    display: flex;
+    background-color: transparent;
+    color: transparent;
+    flex-direction: column;
+    align-items: center;
+}
+label{
+    color: white;
+    font-size: larger;
+}
+::placeholder{
+    font-size:small;
+    font-weight:normal;
+}
+.section2{
+    background: #F1D600;
+}
+table{
+    margin: auto;
+    text-align: center;
+    color: #F1D600;
+    padding-bottom: 50px;
+}
+tbody{
+    background: rgba(117, 117, 117, 0.5);
+}
+tr{
+    background: #910705;
+}
+th{
+    margin: auto;
+    width: 130px;
+    height: 60px;
+    /* padding: 25px 28PX; */
+    color: white;
+    font-weight: bolder;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.clr{
+    color: #F1D600;
+    background-color: #757575;
+}
+input.Edit{
+    width: 70px;
+    height: 40px;
+    background-color: #757575;
+    border: transparent;
+    padding: 3px 0;
+    margin: 0;
+}
+input.Delete{
+    width: 50px;
+    height: 40px;
+    background-color: #757575;
+    border: transparent;
+    padding: 3px 0;
+    margin: 0;
+}
+td{
+    /* padding: 12px 0px; */
+    background-color: #757575;
+    margin: auto;
+    width: 130px;
+    height: 40px;
+    /* padding: 20px 50PX; */
+}
+p{
+    color:#3b0d0c;
+    font-size:small;
+    padding-top: 10pt;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./code/index.css" media="all">
+  <link rel="icon" href="./images/icon.png" width="150px" />
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+  <title>Gestion Bibliothèque</title>
+</head>
+<body>
+  <main>
+    <h1>Bienvennue dans l'application:<br> Gestion des Ouvrages dans une Bibliothèque "Version1"</h1>
+    <div class="section1">
+      <div class="saisi">
+        <h3>Ouvrage caractéristiques :</h3>
+        
+        <form autocomplete="off" onsubmit="event.preventDefault()" >
+          
+          <label for="titre">Son titre:* <br /></label>
+          <input type="text" name="titre" id="titre" placeholder="Entrer 30 carctères maximum" maxlength="30" required/> <br>
+
+          <label for="auteur">Son auteur:* <br /> </label>
+          <input type="text" name="auteur" id="auteur" placeholder="Entrer 30 carctères maximum" maxlength="30"  required/><br>
+
+          <label for="prix">Son prix:* <br> </label>
+          <input type="text" name="prix" id="prix" placeholder="Entrer le Prix reel de l'Ouvrage"  required pattern="\d+(.\d{2})" /><br>
+
+          <label for="date">Sa date de publication:* <br /></label>
+          <input type="date" name="date" id="date" required/><br>
+
+          <label >Sa langue:* <br /></label>
+          <select id="Selectlangue" required>
+            <option></option>
+            <option value="Français">Français</option>
+            <option value="Anglais">Anglais</option>
+            <option value="Arabe">Arabe</option>
+            <option value="Espagnol">Espagnol</option>
+          </select><br>
+          
+          <label >Son type: *<br/></label>
+          <div class="flexbtn">
+            <div class="Radiobtns" id="Radiobtns" >
+            <input type='radio' id='roman' value='Roman'  name='name' required >
+            <label for='roman'>Roman</label>
+            <br>
+            <input type='radio' id='essai' value='Essai'   name='name' required>
+            <label for='essai'>Essai</label>
+            <br>
+            <input type='radio' id='bandle' value='Bande-Dessinée'   name='name' required>
+            <label for='Bande-Dessinée'>Bande-Dessinée</label>
+            </div>
+
+               <input type="image" src="./fonts/plus-circle-solid.svg" class="inputInsérer">
+
+            </div>
+
+            <p> *  : ce champ est obligatoire</p>
+        </form>
+      </div>
+      <img src="./images/bibl-removebg-preview.png" alt="Bibliothèque" />
+    </div>
+
+    <div class="section2">
+      <h2>Tableau d'Ouvrages :</h2>
+
+      <table id="totales-ouvrages">
+        <thead>
+          <tr>
+            <th>Son titre</th>
+            <th>Son auteur</th>
+            <th>Son prix</th>
+            <th>Sa date de publication</th>
+            <th>Sa langue</th>
+            <th>Son type</th>
+            <th class="clr">Modifier</th>
+            <th class="clr">Suprimer</th>
+          </tr>
+        </thead>
+        <tbody>  <!--add row  -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <script src="./code/index.js"></script>
+</body>
+</html>
+
+
